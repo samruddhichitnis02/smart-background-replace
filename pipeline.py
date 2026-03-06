@@ -23,7 +23,7 @@ def free_gpu():
 # Load pipeline
 # -----------------------------
 def load_inpaint_pipe():
-    free_gpu()  # ✅ free GPU BEFORE loading, not before function is defined
+    free_gpu()  # free GPU BEFORE loading, not before function is defined
     pipe = StableDiffusionInpaintPipeline.from_pretrained(
         INPAINT_MODEL_ID,
         torch_dtype=torch.float16,
@@ -130,7 +130,7 @@ def inpaint_background(
     original_rgb: Image.Image,
     mask_bg: Image.Image,
     prompt: str,
-    steps: int = 20,   # ✅ reduced from 30 for speed
+    steps: int = 20,   #reduced from 30 for speed
     seed: int = 0,
     guidance: float = 7.5,
 ) -> Image.Image:
@@ -165,7 +165,7 @@ def inpaint_background(
         num_inference_steps=int(steps),
         guidance_scale=float(guidance),
         generator=gen,
-        # ✅ removed height/width — not needed for SD 1.5, only SDXL
+        #removed height/width — not needed for SD 1.5, only SDXL
     ).images[0]
 
     return out.resize(original_size, Image.LANCZOS)
