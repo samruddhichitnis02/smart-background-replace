@@ -72,7 +72,7 @@ CSS = """
 with gr.Blocks() as demo:
     with gr.Column(elem_id="container"):
         with gr.Column(elem_classes="header"):
-            gr.Markdown("# 🎨 Background Swap")
+            gr.Markdown("# Background Swap")
             gr.Markdown("Transform your photos with AI-powered inpainting. Professional results, simplified.")
 
         with gr.Row():
@@ -84,7 +84,7 @@ with gr.Blocks() as demo:
                     lines=3
                 )
                 
-                with gr.Accordion("⚙️ Advanced Settings", open=False, elem_classes="advanced-accordion"):
+                with gr.Accordion("Advanced Settings", open=False, elem_classes="advanced-accordion"):
                     with gr.Row():
                         steps = gr.Slider(15, 60, value=30, step=1, label="Inpaint Steps")
                         guidance_scale = gr.Slider(1.0, 20.0, value=9.0, step=0.5, label="Guidance Scale")
@@ -99,12 +99,12 @@ with gr.Blocks() as demo:
                     
                     harmonize_strength = gr.Slider(0.0, 1.0, value=0.35, step=0.05, label="Harmonization Intensity")
 
-                generate_btn = gr.Button("🚀 Generate New Background", elem_classes="generate-btn")
+                generate_btn = gr.Button("Generate New Background", elem_classes="generate-btn")
 
             with gr.Column(scale=1):
                 final_output = gr.Image(type="pil", label="Final Professional Result", height=400)
                 
-                with gr.Accordion("🔍 Debugging & Intermediate Steps", open=False):
+                with gr.Accordion("Debugging & Intermediate Steps", open=False):
                     with gr.Row():
                         fg_cutout = gr.Image(type="pil", label="Foreground Segment")
                         mask_preview = gr.Image(type="pil", label="Background Mask")
