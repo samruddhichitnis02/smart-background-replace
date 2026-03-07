@@ -6,7 +6,8 @@
 
 | Original | Result |
 |---|---|
-| ![Original Photo](demo/image__1_.png) | ![Background Swapped](demo/image__2_.png) |
+![Demo 1](demo/image1.png)
+![Demo 2](demo/image2.png)
 
 ---
 
