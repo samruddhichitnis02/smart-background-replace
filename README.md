@@ -2,8 +2,8 @@
 
 > Transform your photos with AI-powered inpainting. Professional results, simplified.
 
-![Background Swap Demo](image1.png)
-![Background Swap Demo](image2.png)
+![Demo 1](demo/image1.png)
+![Demo 2](demo/image2.png)
 
 ---
 
