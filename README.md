@@ -3,9 +3,6 @@
 > Transform your photos with AI-powered inpainting. Professional results, simplified.
 
 ## 🖼️ Demo
-
-| Original | Result |
-|---|---|
 ![Demo 1](demo/image1.png)
 ![Demo 2](demo/image2.png)
 
@@ -62,18 +59,7 @@ Final Professional Result
 ## 🖥️ GPU — Tested on Our Own Hardware
 
 This project was **developed and tested entirely on a local GPU machine**. Below is the actual `nvidia-smi` output captured during a live inference run:
-
-```
-nvidia-smi  (Fri Mar 6 10:44:14 2026)
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 591.59       Driver Version: 591.59       CUDA Version: 13.1    |
-+-------------------------------+----------------------+----------------------+
-| GPU  Name            WDDM    |  Bus-Id              |  Memory-Usage        |
-|  0   NVIDIA GeForce RTX 3060 |  00000000:01:00.0    |  3297MiB / 6144MiB  |
-+-----------------------------------------------------------------------------+
-| Processes:  C:\Python311\python.exe                                         |
-+-----------------------------------------------------------------------------+
-```
+![Demo 1](demo/image3.png)
 
 > 📸 *Real inference captured — ~3.3 GB of 6 GB VRAM actively used during Stable Diffusion inpainting*
 
